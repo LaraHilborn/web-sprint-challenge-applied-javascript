@@ -11,6 +11,13 @@ const Header = (title, date, temp) => {
   //    <span class="temp">{ temp }</span>
   //  </div>
   //
+  const headerEl = document.querySelector('header-container');
+
+  const headline = document.createElement('h1');
+  headline.textContent = 'title'
+  headline.style.fontSize = '7rem'
+
+  headerEl.appendChild(headline);
 }
 
 const headerAppender = (selector) => {
